@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Design</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+   <script>
+
+     $(document).ready(function(){
+       $('.scrollTop').click(function(){
+         var target=$(this).attr('href');
+         var targetPos=$(target).offset().top;
+         console.log(target,targetPos);
+         $('body').animate({scrollTop:targetPos},1000);
+       });
+     });
+   </script>
+</head>
+<body>
+<header>
+  
+<div class="nav_2">
+<a href="index.html"><img src="img/logo.png" alt="LOGO" width="250px" height="250px"></a>
+  <nav>
+    <ul class="list-inline menu_1" >
+       <li><a href="#information" class="scrollTop">個人信息</a></li>
+       <li><a href="#aboutme" class="scroll">關於我</a></li>
+       <li><a href="#photos" class="scroll">生活剪影</a></li>
+       <li><a href="#contact" class="scroll">聯絡我</a></li>
+   </ul>
+   </nav>
+  </div>
+</header>
+
+<article class="about" id="information">
+<img src="img/photo.jpg" alt="" >
+<p>
+    姓名：薛玉歆/Yu Shin Shiue <br><br>
+    家鄉：高雄鳥松<br><br>
+    現居：台北大安<br><br>
+    生日：3月14日<br><br>
+    星座：雙魚座<br><br>
+    目前就讀國立臺北教育大學  數學暨資訊教育學系<br><br>
+    興趣：閱讀、攝影<br>    
+</p>
+</article>
+    
+<article class="study" id="aboutme">
+  <div>
+    <div><img src="img/menu1.jpg" alt=""></div>
+    <div><img src="img/menu2.jpg" alt=""></div>
+    <div><img src="img/menu3.jpg" alt=""></div>
+  </div>
+</article>
+
+    <div class="picture" id="photos">
+    <div><img src="img/photo1.jpg" alt=""></div>
+    <div><img src="img/photo2.jpg" alt=""></div>
+    <div><img src="img/photo3.jpg" alt=""></div>
+    <div><img src="img/photo4.jpg" alt=""></div>
+    <div><img src="img/photo5.jpg" alt=""></div>
+</div>
+
+</div>
+<div class="my_form">
+<form action="">
+<h1>回覆我</h1><br>
+姓名：<input type="text" name="name" value=""><br><br>
+留言：<input type="text" name="email" value="Email"><br><br>
+<button>送出</button>
+</form>
+</div>
+
+
+</div>
+
+<footer>
+  <div id="contact">
+<p><b>Contact </b><br><br>
+聯絡電話：02-XXXXXXX <br>
+聯絡地址：台北市XX區XX路612號 <br>
+Copyright © 2018 webdesign<br>
+</p></div>
+<div class="icon">
+<a href="https://www.facebook.com/popo0326/?ref=bookmarks"><img src="img/facebook.png" alt=""  width="70px" height="70px"></a>
+<a href="https://www.instagram.com/kura10417/"><img src="img/instagram.png" alt="" width="70px" height="70px"></a>
+</div>
+</footer>
+
+</body>
+</html>
