@@ -18,18 +18,18 @@ float: left;
 }
 .nav_2 img{
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 6%;
   float: left;
 }
 .nav_2 ul{
   margin-top: 7%;
-  margin-left: 5%;
+  margin-left: 3%;
   float: left;
 }
 .nav_2 a{
   color: #ffffff;
   font-size: 30px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .nav_2 a:hover{
   color:gray;
